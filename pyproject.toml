@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdap"
+authors = [
+    {name = "Aitor Mira Abad", email = "itortouch@gmail.com"},
+]
+description = "Garage Data Aitor Pills (GDAP)."
+requires-python = ">=3.9"
+dynamic = ["version", "readme", "dependencies"]
+
+[tool.setuptools.dynamic]
+version = {attr = "gdap.__version__"}
+readme = {file=["README.md"], content-type="text/markdown"}
+dependencies = {file = ["requirements.txt"]}
+
+[tool.ruff]
+line-length = 120
+
+[tool.black]
+line-length = 120
