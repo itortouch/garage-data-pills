@@ -3,3 +3,6 @@ pandas
 plotly
 matplotlib
 nbformat>=4.2.0
+yfinance
+tensorflow == 2.16.1
+keras == 3.1.1
