@@ -1,3 +1,4 @@
 src/gdap.egg-info/*
 .DS_Store
 *.pyc
+data/online_retail_II.csv
